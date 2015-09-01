@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="shoppingApp">
+<head>
+  <meta charset="UTF-8">
+ <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+
+  <base href="/">
+</head>
+<body ng-cloak>
+  <main>
+    <h1 class="welcome">Welcome to MEAN Tea!</h1>
+    <nav>
+      <a ng-href="home.html">Home</a>
+      <a ng-href="about.html">About</a>
+      <a ng-href="contact.html">Contact</a>
+    </nav>
+ </main>
+    <div ng-view></div>
+
+
+<script src="/js/ang.js"></script>
+<script src="/js/services.js"></script>
+<script src="shopping.json"></script>
+<script src="/js/controllers.js"></script>
+<script src="/js/routes.js"></script>
+<script src="/js/filters.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+.show {
+  padding: 40px;
+}
+
+.name {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.45;
+/*   float: left;
+ */
+  margin: 20px;
+  margin-top: 10px;
+  display: block;
+  padding: 10px;
+}
+.name:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  margin-left: 150px;
+
+}
+.login {
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
+  background: #482ACF;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  transition: 300ms ease all;
+}
+
+section {
+  margin-left: 45px;
+}
+.welcome {
+  color: #ed8b3b;
+  font-weight: bold;
+}
+.checkout {
+  border: 2px outset buttonface;
+/*   -moz-box-shadow: 1px 1px 2px black;
+-webkit-box-shadow: 1px 1px 2px black;
+box-shadow: 1px 1px 2px black; */
+  font-size: 11px;
+  margin-right: 38px;
+  float: right;
+  padding: 5px;
+  margin-left: 5px;
+  background: #ed8b3b;
+  color: white;
+}
+
+.bag {
+  margin-right: 5px;
+}
+.total {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  width: 60%;
+}
+.qty {
+  width: 7%;
+}
+.tea {
+  width: 60%;
+}
+.text-align {
+  padding-right: 20px;
+  text-align: right;
+/*     text-align: ".";
+ */}
+ .categories, .ingredients {
+   line-height: 1.3em;
+   font-weight: normal;
+   padding-left: 20px;
+ }
+ .option {
+    font-size: .7em;
+ }

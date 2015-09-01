@@ -1,0 +1,64 @@
+<!-- <li><h3 ng-click="addForm()" type="submit"><span>Reddit Clone</span><i class="fa fa-plus"></i>Submit Post</h3></li>
+-->
+<main>
+  <form>
+  <label for="search">Sort By Category</label>
+  <select name="search" ng-model="search">
+    <option value="dark">Sort by Dark</option>
+    <option value="cold">Sort by Cold</option>
+    <option value="dry">Sort by Dry</option>
+    <option value="hot">Sort by Hot</option>
+    <option value="awesome">Sort by Awesome</option>
+    <option value="summer">Sort by Summer</option>
+    <option value="lucid">Sort by Lucic</option>
+    <option value="warm">Sort by Warm</option>
+    <option value="winter">Sort by Winter</option>
+    <option value="spring">Sort by Spring</option>
+  </select>
+  <a ng-href="checkout" class="right checkout">Checkout | Bag: ({{checkoutCounter | Empty}})!</a>
+  <label for="search">Search by Name</label>
+     <input type="search" id="searchName" ng-model="searchName">
+</form>
+  <table>
+    <thead>
+      <tr>
+        <th>Tea</th>
+        <th>Information</th>
+        <th>
+            <label for="price">Sort by Price</label>
+            <select class="right" name="price" id="price" ng-model="price">
+              <option value="price">Lowest</option>
+              <option value="-price">Highest</option>
+            </select>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="tea in teaData | filter:search | filter:searchName | orderBy:price">
+        <td><img src="{{tea.imageUrl}}" alt=""></td>
+          <td><h3>{{tea.name}}</h3>
+          <p>Price: {{tea.price}}</p>
+          <p>Caffeine Scale: {{tea.caffeineScale}}</p>
+          <p>Ingredients: {{tea.ingredients}}</p>
+          <p>In Stock? {{tea.inStock | yesNo}}</p>
+
+         <div ng-repeat="category in tea.categories">
+            <li class="categories">{{category}}</li>
+         </div>
+        </td>
+        <td class="top">
+          <h3 class="left left:after">Quantity</h3>
+          <select class="select" name="quantity" ng-model="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <button class="checkout bag left left:after" ng-click="addTea(tea, quantity)" type="submit">Add to Bag</button>
+        </td>
+    </tbody>
+  </table>
+    </div>
+  </main>

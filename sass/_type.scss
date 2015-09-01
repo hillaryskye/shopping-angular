@@ -1,0 +1,165 @@
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+/*   font-family: 'Libre Baskerville', serif;
+ */  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+article a {
+  padding: 5px;
+  line-height: 1em;
+}
+article {
+  width: 100%;
+  display: block;
+  float: left;
+  height: 25px;
+
+}
+p {
+  text-align: ".";
+  margin-left: 10px;
+  font-size: .7em;
+  margin-bottom: 1.3em;
+  padding-left: 10px;
+}
+
+h1, h2, h3, h4 {
+/*   margin: 1.414em 0 0.5em;
+ */  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  padding-left: 55px;
+  margin-top: 0;
+  font-size: 2.441em;
+}
+
+h2 {
+  font-size: 1.953em;
+  margin-left: 10px;
+}
+
+h3 {
+  margin-left: 10px;
+  font-size: 1.3em;
+}
+
+h4 {
+  float: left;
+  padding-left: 50px;
+  font-size: 1.25em;
+  text-align: center;
+}
+h5 {
+  float: right;
+  font-size: .9em;
+  padding-right: 10px;
+}
+h6 {
+  font-weight: normal;
+   margin: 0px;
+   margin-left: 20px;
+   line-height: 1.3em;
+   font-size: .7em;
+}
+
+small, .font_small {font-size: 0.8em;}
+
+ul {
+  list-style: circle;
+}
+table {
+  margin-bottom: 10px;
+  margin: 20px;
+  width: 95%;
+  border: 1px solid orange;
+}
+table2 {
+  margin-top: 10px;
+}
+thead {
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid orange;
+}
+td {
+/*   padding-top: 20px;
+ *//*   padding-left: 10px;
+ */  border: 1px solid orange;
+}
+th {
+  border: 1px solid orange;
+  font-size: .8em;
+  padding: 5px;
+  padding-left: 10px;
+}
+td:nth-child(1) {
+  margin: 0 auto;
+  width: 30%;
+}
+
+td:nth-child(3) {
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 22%;
+}
+td:nth-child(4) {
+  width: 22%;
+}
+td:nth-child(3), td:nth-child(2), td:nth-child(4) {
+  vertical-align: top;
+}
+.table2 td:nth-child(3) {
+  width: 10%;
+}
+.table2 td {
+  padding-top: 0;
+  padding-left: 0;
+  line-height: .5em;
+}
+tr:nth-of-type(even) {
+/*   background: rgba(000,000,000,0.3);
+ */}
+ th:nth-child(2) {
+  text-align: center;
+}
+ th:nth-child(4) {
+  text-align: right;
+}
+
+blockquote {
+  padding-left: 60px;
+  border-left: #24227F solid 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  margin: 5px;
+  border-radius: 3px;
+  padding: 7px 10px;
+  color: #24227F;
+  text-decoration: none;
+  transition: 300ms ease all;
+
+}
+
+ h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+  a:hover, button:hover {
+    color: #fff;
+    background: mediumslateblue;  }
+
+span {
+  color: #482ACF;
+}

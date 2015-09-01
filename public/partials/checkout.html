@@ -1,0 +1,41 @@
+<table class="total table2">
+<thead>
+  <tr>
+    <th class="tea">Tea</th>
+    <th>Price</th>
+    <th class="quantity">Quantity</th>
+    <th>Subtotal</th>
+  </tr>
+</thead>
+<tbody>
+    <tr class="cart" ng-repeat="tea in cartData track by $index">
+      <td class="tea"><p>{{tea.name}}</p>
+        <button class="checkout bag" ng-click="removeTea(tea)" type="submit">Delete</button>
+        <p>Caffeine Scale: {{tea.caffeineScale}}</p>
+        <h6>Ingredients: {{tea.ingredients}}</h6>
+        <p>Rating: {{tea.rating}}</p>
+      </td>
+      <td class="text-align"><p>{{tea.price | currency}}</p></td>
+      <td class="qty"><p class="left left:after">
+        <select class="select" name="tea.quantity" ng-model="tea.quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+
+      </td>
+      <td class="text-align"><p>{{tea.price * tea.quantity | currency }}</p></td>
+
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="total"><h5>Total: {{getTotal() | currency}}</h5></td>
+    </tr>
+</tbody>
+  </div>
+</table>
